@@ -19,9 +19,11 @@ export default function calculateHanoi(disksNumber, turnsSpeed) {
     turns: 3,
     seconds: 0,
   };
+
   for (let i = 3; i <= disksNumber; i++) {
     result.turns += result.turns + 1;
   }
   result.seconds = Math.floor(result.turns / (turnsSpeed / 60 / 60));
+  
   return result;
 }

@@ -16,6 +16,7 @@ import { NotImplementedError } from '../extensions/index.js';
 export default function createDreamTeam(members) {
   if (!Array.isArray(members)) return false;
   let result = [];
+  
   for (let i of members) {
     if (typeof i === 'string') {
        i = i.trim();

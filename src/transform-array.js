@@ -16,15 +16,7 @@ import { NotImplementedError } from '../extensions/index.js';
 export default function transform(arr) {
   if (!Array.isArray(arr)) throw new Error ("'arr' parameter must be an instance of the Array!");
   let result = [];
-  // arr.forEach(item => {
-  //   if (typeof item === 'number') result.push(item);
-  //   else {
-  //     switch (item) {
-  //       case '--discard-next':
-  //       case '--discard-prev':
-  //     }
-  //   }
-  // })
+  
   for (let i = 0; i < arr.length; i++) {
    
       switch (arr[i]) {

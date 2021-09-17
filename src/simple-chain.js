@@ -5,7 +5,6 @@ import { NotImplementedError } from '../extensions/index.js';
  * 
  */
 export default {
-
   length: 0,
   chain: '',
 

@@ -16,6 +16,7 @@ import { NotImplementedError } from '../extensions/index.js';
  */
 export default function countCats(matrix) {
   let catsNum = 0;
+  
   matrix.forEach(box => {
     for (let item of box) {
       if (item === '^^') catsNum++;
